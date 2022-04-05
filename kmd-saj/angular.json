@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "saj-demo": "apps/saj-demo",
+    "saj-demo-e2e": "apps/saj-demo-e2e"
+  }
+}
