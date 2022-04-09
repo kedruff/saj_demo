@@ -13,8 +13,14 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "strictPropertyInitialization": false,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@kmd-saj/applicant-details": ["libs/applicant-details/src/index.ts"],
+      "@kmd-saj/manager-favorites": ["libs/manager-favorites/src/index.ts"],
+      "@kmd-saj/state-management": ["libs/state-management/src/index.ts"],
+      "@kmd-saj/summary-results": ["libs/summary-results/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,7 +1,11 @@
 {
   "version": 2,
   "projects": {
+    "applicant-details": "libs/applicant-details",
+    "manager-favorites": "libs/manager-favorites",
     "saj-demo": "apps/saj-demo",
-    "saj-demo-e2e": "apps/saj-demo-e2e"
+    "saj-demo-e2e": "apps/saj-demo-e2e",
+    "state-management": "libs/state-management",
+    "summary-results": "libs/summary-results"
   }
 }
