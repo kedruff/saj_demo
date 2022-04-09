@@ -1,24 +1,21 @@
-#TODO
+# Instructions
 
-1. Enterprise design components?
-2. What's the architecture for APIs? Is there an OL/BFF?
+```sh 
+git clone
+npm install
+```
 
-- assumption: there's a BFF that pulls together multiple enterprise APIs for the details
-- what's the current performance of the APIs? Do we need to assume high latency for agglomerating? or the data is highly cached and performant?
+To serve the app: 
+```sh
+npx nx run saj-demo:serve
+```
 
-3. Summary table
-4. Detail view
-5. Filter Mechanism
-6. Sort Mechanism
-7. save functionality
+To run the acceptance tests:
 
-- Storage? indexedDB? API Post?
+```sh
+npx nx run saj-demo-e2e:e2e
 
-8. Standard Headers
+# to watch/step through the tests
+npx nx run saj-demo-e2e:e2e --watch
+```
 
-- token
-- correlation ID
-- audit loggingb
-
-9. APM tracking -- New Relic or DataDog?
-10.
