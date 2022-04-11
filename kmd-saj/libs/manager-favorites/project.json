@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/manager-favorites",
+  "sourceRoot": "libs/manager-favorites/src",
+  "prefix": "kmd-saj",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/manager-favorites"],
+      "options": {
+        "jestConfig": "libs/manager-favorites/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/manager-favorites/src/**/*.ts",
+          "libs/manager-favorites/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

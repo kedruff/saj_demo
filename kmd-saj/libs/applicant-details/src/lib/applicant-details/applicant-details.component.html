@@ -1,0 +1,14 @@
+<h1>{{ applicant.name }}</h1>
+<h2>{{applicant.position }}<br /> 
+Applied on {{ applicant.applied | date }} </h2>
+
+<kmd-saj-save-applicant-button [applicantId]="applicant.id"></kmd-saj-save-applicant-button>
+
+<h3>Availability</h3> 
+<kmd-saj-availability-table [availability]="applicant.availability"></kmd-saj-availability-table>
+
+<h3>Applicant Q&A:</h3> 
+<section *ngFor="let q of applicant.questions; let i=index">
+  <h4 [attr.data-testHook]="'applicant-question-' + i">Q:  {{ q.text }} </h4>
+  <p [attr.data-testHook]="'applicant-answer-' + i">A: {{q.answer}} </p>
+</section>

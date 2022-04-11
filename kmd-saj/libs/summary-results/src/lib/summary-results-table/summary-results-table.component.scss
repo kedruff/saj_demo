@@ -1,0 +1,11 @@
+.mat-cell {
+  &, &:first-of-type {
+    padding: 0.25rem 1rem 0.25rem 1.25rem;
+  }
+}
+
+tr.mat-row {
+  &:nth-of-type(odd) {
+    background-color: #efefef;
+  }
+}

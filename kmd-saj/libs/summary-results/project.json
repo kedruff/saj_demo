@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/summary-results",
+  "sourceRoot": "libs/summary-results/src",
+  "prefix": "kmd-saj",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/summary-results"],
+      "options": {
+        "jestConfig": "libs/summary-results/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/summary-results/src/**/*.ts",
+          "libs/summary-results/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

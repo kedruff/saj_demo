@@ -1,0 +1,6 @@
+<form name="filterApplicants" [formGroup]="filterForm" (submit)="filterSubmit()">
+  <label for="filterInput">Search Term</label>
+  <input data-testHook="filterInput" type="text" name="filterInput" id="filterInput" formControlName="filter">
+  <button data-testHook="filterSubmit" type="submit">Search</button>
+  <button data-testHook="filterReset" type="button" (click)="filterClear()">Reset</button>
+</form>

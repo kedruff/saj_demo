@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/state-management",
+  "sourceRoot": "libs/state-management/src",
+  "prefix": "kmd-saj",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/state-management"],
+      "options": {
+        "jestConfig": "libs/state-management/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/state-management/src/**/*.ts",
+          "libs/state-management/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
